@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreCycle | 퀴즈게임</title>
+    <link rel="stylesheet" href="../css/game.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-container">
+            <div class="header-title">
+                GreCycle Game
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="question">
+        <div class="question-container">
+            <div class="question-box">
+                <div class="question-text">
+                    재활용으로 얻은 재료는 항상 초기 원료와 품질 면에서 동등한가요? <!--오답-->
+                </div>
+                <div class="question-btn">
+                    <div class="question-ok ok-one" onclick="clickOneOk('oneOk', 'oneNo');">정답</div>
+                    <div class="question-no no-one" onclick="clickOneNo('oneOk', 'oneNo');">오답</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="question-container">
+            <div class="question-box">
+                <div class="question-text">
+                    재활용이 높은 수준으로 이루어질수록 환경 친화적인 제품 생산이 가능한가요? <!--정답-->
+                </div>
+                <div class="question-btn">
+                    <div class="question-ok ok-two" onclick="clicktwoOk('twoOk', 'twoNo');">정답</div>
+                    <div class="question-no no-two" onclick="clicktwoNo('twoOk', 'twoNo');">오답</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="question-container">
+            <div class="question-box">
+                <div class="question-text">
+                    재활용은 생태계의 생물 다양성을 영향을 주지 않는가요? <!--오답-->
+                </div>
+                <div class="question-btn">
+                    <div class="question-ok ok-three" onclick="clickthreeOk('threeOk', 'threeNo');">정답</div>
+                    <div class="question-no no-three" onclick="clickthreeNo('threeOk', 'threeNo');">오답</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="question-container">
+            <div class="question-box">
+                <div class="question-text">
+                    재활용은 지속 가능한 개발을 위한 핵심적인 전략인가요? <!--정답-->
+                </div>
+                <div class="question-btn">
+                    <div class="question-ok ok-four" onclick="clickfourOk('fourOk', 'fourNo');">정답</div>
+                    <div class="question-no no-four" onclick="clickfourNo('fourOk', 'fourNo');">오답</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="question-container">
+            <div class="question-box">
+                <div class="question-text">
+                    재활용 과정에서 발생하는 에너지 소비는 항상 환경적 부담을 초래하는가요? <!--오답-->
+                </div>
+                <div class="question-btn">
+                    <div class="question-ok ok-five" onclick="clickfiveOk('fiveOk', 'fiveNo');">정답</div>
+                    <div class="question-no no-five" onclick="clickfiveNo('fiveOk', 'fiveNo');">오답</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="question-container">
+            <div class="question-box">
+                <div class="question-text">
+                    재활용은 경제적 이익과 함께 환경적 이점도 제공하는가요? <!--정답-->
+                </div>
+                <div class="question-btn">
+                    <div class="question-ok ok-six" onclick="clicksixOk('sixOk', 'sixNo');">정답</div>
+                    <div class="question-no no-six" onclick="clicksixNo('sixOk', 'sixNo');">오답</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="question-container">
+            <div class="question-box">
+                <div class="question-text">
+                    재활용은 지구 온난화에 직접적인 영향을 미치는 중요한 해결책인가요? <!--정답-->
+                </div>
+                <div class="question-btn">
+                    <div class="question-ok ok-seven" onclick="clicksevenOk('sevenOk', 'sevenNo');">정답</div>
+                    <div class="question-no no-seven" onclick="clicksevenNo('sevenOk', 'sevenNo');">오답</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="question-container">
+            <div class="question-box">
+                <div class="question-text">
+                    재활용이 증가하면 해양에서 발생하는 플라스틱 오염이 감소하는가요? <!--정답-->
+                </div>
+                <div class="question-btn">
+                    <div class="question-ok ok-eight" onclick="clickeightOk('eightOk', 'eightNo');">정답</div>
+                    <div class="question-no no-eight" onclick="clickeightNo('eightOk', 'eightNo');">오답</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="question-container">
+            <div class="question-box">
+                <div class="question-text">
+                    재활용은 새로운 기술과 혁신을 촉진하여 환경 문제에 대한 해결책을 제공하는가요? <!--정답-->
+                </div>
+                <div class="question-btn">
+                    <div class="question-ok ok-nine" onclick="clicknineOk('nineOk', 'nineNo');">정답</div>
+                    <div class="question-no no-nine" onclick="clicknineNo('nineOk', 'nineNo');">오답</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="question-container">
+            <div class="question-box">
+                <div class="question-text">
+                    재활용을 통해 얻은 제품은 항상 더 높은 가치를 지니는가요? <!--오답-->
+                </div>
+                <div class="question-btn">
+                    <div class="question-ok ok-ten" onclick="clicktenOk('tenOk', 'tenNo');">정답</div>
+                    <div class="question-no no-ten" onclick="clicktenNo('tenOk', 'tenNo');">오답</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="result">
+        <div class="result-container" onclick="clickResult(); resultOpen();">
+            <div class="result-text">
+                채점하기
+            </div>
+        </div>
+    </div>
+    <div class="result-container2">
+        <div class="result-btn-box">
+            <a href="../html/game.html">
+                <div class="btn1">
+                    <i class='bx bx-x'></i>
+                </div>
+            </a>
+            <div class="btn2">
+                <i class='bx bx-minus'></i>
+            </div>
+            <div class="btn3">
+                <i class='bx bx-expand-alt bx-rotate-90'></i>
+            </div>
+        </div>
+        <div class="result-text2">
+            점수&nbsp; : &nbsp;<p><span class="value"></span>점</p>
+        </div>
+        <div class="sub-result-text">
+            좌측 위 X를 누를시 퀴즈게임을 다시 할 수 있습니다.
+        </div>
+        <hr>
+        <a href="main.html">
+            <div class="result-text-btn-box">
+                메인으로 되돌아가기
+            </div>
+        </a>
+        <a href="commentary.html">
+            <div class="result-text-btn-box2">
+                문제해석보기
+            </div>
+        </a>
+    </div>
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>
