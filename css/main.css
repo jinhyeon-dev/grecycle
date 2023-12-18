@@ -280,11 +280,6 @@ main {
         opacity: 1;
         transform: translateZ(0);
     }
-
-    exit 30% {
-        opacity: 0;
-        clip-path: inset(50% 0% 50% 0%);
-    }
 }
 
 @media only screen and (max-width: 900px) {
